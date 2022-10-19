@@ -124,14 +124,14 @@ STATIC_URL = '/static/'
 PG_TXNTYPE = 'SALE'
 PG_CURRENCY_CODE = 356
 PG_REQUEST_URL = 'https://secure.pay10.com/pgui/jsp/paymentrequest'
-PG_SALT = 'ede85d21c0a44818'
-PG_PAY_ID = '1099120418114007'
-HOSTED_KEY='D9C6C86443383ACEA888E2B9F2F90D74'
-IV ='D9C6C86443383ACE'
+PG_SALT = ''
+PG_PAY_ID = ''
+HOSTED_KEY=''
+IV =''
 
 # Debug overrides
 if DEBUG:
     PG_REQUEST_URL = 'https://uat.pay10.com/pgui/jsp/paymentrequest'
-    PG_SALT = 'ede85d21c0a44818'
-    PG_PAY_ID = '1099120418114007'
-    HOSTED_KEY='D9C6C86443383ACEA888E2B9F2F90D74'
+    PG_SALT = ''
+    PG_PAY_ID = ''
+    HOSTED_KEY=''
