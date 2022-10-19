@@ -1,0 +1,26 @@
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Redirecting...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        body {
+            text-align: center;
+            padding-top: 10rem;
+            background-color: #1b1d1e;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <h2>Redirecting...</h2>
+    <p>Please wait while we redirect you to payment page</p>
+    <form id="payForm" action="{{ settings.PG_REQUEST_URL }}" method="post">
+        {% for key,value in data.items %}
+        <input type="hidden" name="{{ key }}" value="{{ value }}">
+        {% endfor %}
+    </form>
+    <script type="text/javascript"> document.getElementById("payForm").submit(); </script>
+</body>
+</html>
